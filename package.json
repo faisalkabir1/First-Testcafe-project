@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "test": "testcafe chrome -c 1 login test.js"
+    "test": "testcafe chrome -c 1 login-test.js"
   },
   "dependencies": {
     "node": "^18.13.0",
