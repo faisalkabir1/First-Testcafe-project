@@ -10,8 +10,8 @@ test('User can search for a product', async t => {
 
     await t
         .typeText(searchInput, 'online bank');
-        .pressKey('enter');
-        .expect(resultTitle.innerText).contains('online bank');
+    await t.pressKey('enter');
+    await t.expect(resultTitle.innerText).contains('online bank');
 })
 test('Valid Login test', async t => {
 
