@@ -9,9 +9,9 @@ test('User can search for a product', async t => {
     const resultTitle = Selector('.result-title');
 
     await t
-        .typeText(searchInput, 'product name')
-        .click(searchButton)
-        .expect(resultTitle.innerText).contains('product name');
+        .typeText(searchInput, 'online bank');
+        .pressKey('enter');
+        .expect(resultTitle.innerText).contains('online bank');
 })
 test('Valid Login test', async t => {
 
