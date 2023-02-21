@@ -6,7 +6,7 @@ fixture`Getting Started`
 test('User can search for a product', async t => {
     const searchInput = Selector('#searchTerm');
 
-    const resultTitle = Selector('.result-title');
+    const resultTitle = Selector('.top_offset');
 
     await t
         .typeText(searchInput, 'online bank');
